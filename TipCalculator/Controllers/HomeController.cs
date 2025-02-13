@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿// Ignore Spelling: calc
+
+using Microsoft.AspNetCore.Mvc;
 using TipCalculator.Models;
 
 namespace TipCalculator.Controllers
@@ -11,8 +13,8 @@ namespace TipCalculator.Controllers
         {
             ViewBag.Fifteen = 0;
             ViewBag.Twenty = 0;
-            Viewbag.TwentyFive = 0;
-            View();
+            ViewBag.TwentyFive = 0;
+            return View();
         }
 
         [HttpPost]
